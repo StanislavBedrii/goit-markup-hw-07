@@ -1,4 +1,5 @@
-* Оформление примеров-работ */ .section-work-examples {
+/* Оформление примеров-работ */
+.section-work-examples {
   padding-bottom: 94px;
 }
 .work-examples-list {
@@ -19,11 +20,11 @@
   margin-bottom: 0px;
 }
 .work-examples-title {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
   letter-spacing: 0.06em;
 }
 
@@ -31,14 +32,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
+
 .work-examples-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   padding: 63px 24px;
-  color: var(--secondary-white-text-color);
+  color: $secondary-white-text-color;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -46,7 +48,7 @@
   left: 0;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: var(--transition-transform);
+  transition: $transition-transform;
 }
 
 .work-examples-list h2 {

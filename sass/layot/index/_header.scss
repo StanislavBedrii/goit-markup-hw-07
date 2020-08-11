@@ -8,14 +8,14 @@
 
 .logo,
 .logo-web {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #000000;
 }
 .logo-web {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .logo {
   margin-right: 85px;
@@ -33,16 +33,16 @@
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: var(--transition-color);
+  transition: $transition-color;
 }
 
 .nav-list-link:hover,
 .nav-list-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
   cursor: pointer;
 }
 
@@ -55,8 +55,8 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  transition: var(--transition-color);
+  color: $primary-text-color;
+  transition: $transition-color;
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus,
@@ -64,8 +64,8 @@
 .header-contacts-link:focus .header-contacts-envelope-icon,
 .header-contacts-link:hover .header-contacts-tel-icon,
 .header-contacts-link:focus .header-contacts-tel-icon {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: $accent-color;
+  fill: $accent-color;
 }
 
 .header-contacts {
@@ -84,7 +84,7 @@
 .header-contacts-envelope-icon,
 .header-contacts-tel-icon {
   margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
 }
 
 .addres {
@@ -100,6 +100,6 @@
   height: 4px;
   left: 0;
   bottom: 0;
-  background: var(--accent-color);
+  background: $accent-color;
   border-radius: 2px;
 }

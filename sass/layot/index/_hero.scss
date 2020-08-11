@@ -6,10 +6,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: linear-gradient(
-      var(--secondary-bgr-color),
-      var(--secondary-bgr-color)
-    ),
+  background-image: linear-gradient($secondary-bgr-color, $secondary-bgr-color),
     url("../images/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +20,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--secondary-white-text-color);
+  color: $secondary-white-text-color;
 }
 .button {
   display: block;
@@ -41,7 +38,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: var(--accent-color);
-  color: var(--secondary-white-text-color);
+  background-color: $accent-color;
+  color: $secondary-white-text-color;
   outline: none;
 }

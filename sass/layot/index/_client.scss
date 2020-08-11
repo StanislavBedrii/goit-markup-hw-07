@@ -27,6 +27,6 @@
 .client-list-link:focus,
 .client-list-link:hover .client-icon,
 .client-list-link:focus .client-icon {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
+  fill: $accent-color;
+  border-color: $accent-color;
 }
