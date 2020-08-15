@@ -1,6 +1,7 @@
 /* Оформление секции Чем мы занимаемся */
 /* для всех title - h2 */
 .title {
+  @include font($fs: 36px, $lh: 1.17);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -10,13 +11,14 @@
 .we-doing-list {
   display: flex;
 }
+
 .we-doing-list-item {
   position: relative;
   width: 370px;
-}
 
-.we-doing-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .we-doing-description {
@@ -25,8 +27,7 @@
   bottom: 0;
   width: 100%;
   height: 70px;
-  font-weight: 700;
-  line-height: 1.14;
+  @include font($fs: 14px);
   text-align: center;
   text-transform: uppercase;
   padding-top: 27px;

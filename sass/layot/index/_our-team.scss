@@ -8,16 +8,12 @@
 }
 
 .our-team-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font($fw: 500, $lh: 1.19);
   text-align: center;
 }
 .our-team-profession {
-  font-weight: 400;
-  font-size: 16px;
+  @include font($fw: 400, $lh: 1.19);
   margin-bottom: 16px;
-  line-height: 1.19;
   text-align: center;
   color: $primary-text-color;
 }
@@ -31,10 +27,10 @@
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
   background-color: $primary-bgr-color;
-}
 
-.our-team-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .our-team-social-list {
@@ -44,33 +40,32 @@
 
 .our-team-social-item {
   padding-bottom: 24px;
-}
-.our-team-social-item:not(:last-child) {
-  margin-right: 10px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .our-team-social-link {
-  display: flex;
+  @include flex();
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
   transition: $transition-bgr-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .our-team-social-icon,
+  &:focus .our-team-social-icon {
+    fill: #ffffff;
+  }
 }
 
 .our-team-social-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
-
-.our-team-social-link:hover,
-.our-team-social-link:focus {
-  background-color: $accent-color;
-}
-
-.our-team-social-link:hover .our-team-social-icon,
-.our-team-social-link:focus .our-team-social-icon {
-  fill: #ffffff;
 }

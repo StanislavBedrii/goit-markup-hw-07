@@ -11,34 +11,29 @@
   margin-bottom: 30px;
   width: 370px;
   height: 404px;
+
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
-.work-examples-item:nth-child(3n) {
-  margin-right: 0px;
-}
-.work-examples-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
 .work-examples-title {
   font-family: $main-font;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font($fs: 18px, $lh: 2);
   color: $primary-title-color;
   letter-spacing: 0.06em;
 }
 
 .work-examples-subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font($fw: 400, $lh: 1.88);
   color: $primary-text-color;
 }
 
 .work-examples-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  @include font($fs: 18px, $fw: 400, $lh: 1.56);
   padding: 63px 24px;
   color: $secondary-white-text-color;
   position: absolute;

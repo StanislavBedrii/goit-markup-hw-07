@@ -565,15 +565,15 @@ img {
 /* Оформление логотипа */
 .header .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo,
 .logo-web {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   color: #000000;
 }
@@ -597,18 +597,18 @@ img {
 }
 
 .nav-list-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
-  font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-link:hover, .nav-list-link:focus {
   color: #2196f3;
   cursor: pointer;
 }
@@ -626,8 +626,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-link:hover,
-.header-contacts-link:focus,
+.header-contacts-link:hover, .header-contacts-link:focus,
 .header-contacts-link:hover .header-contacts-envelope-icon,
 .header-contacts-link:focus .header-contacts-envelope-icon,
 .header-contacts-link:hover .header-contacts-tel-icon,
@@ -688,10 +687,10 @@ img {
 }
 
 .title-hero {
-  margin-bottom: 30px;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
+  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -708,8 +707,8 @@ img {
   margin-left: auto;
   border-radius: 4px;
   border: 1px solid transparent;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   align-items: center;
   text-align: center;
@@ -725,13 +724,14 @@ img {
 }
 
 .advantages-list-name {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
 .advantages-description {
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   color: #757575;
@@ -739,6 +739,10 @@ img {
 
 .advantages-list-item {
   width: 270px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-icon-box {
@@ -755,13 +759,12 @@ img {
   height: 70px;
 }
 
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 /* Оформление секции Чем мы занимаемся */
 /* для всех title - h2 */
 .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -787,6 +790,7 @@ img {
   bottom: 0;
   width: 100%;
   height: 70px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
@@ -807,17 +811,17 @@ img {
 }
 
 .our-team-name {
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   text-align: center;
 }
 
 .our-team-profession {
-  font-weight: 400;
   font-size: 16px;
-  margin-bottom: 16px;
+  font-weight: 400;
   line-height: 1.19;
+  margin-bottom: 16px;
   text-align: center;
   color: #757575;
 }
@@ -852,28 +856,27 @@ img {
 
 .our-team-social-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-social-icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-}
-
-.our-team-social-link:hover,
-.our-team-social-link:focus {
+.our-team-social-link:hover, .our-team-social-link:focus {
   background-color: #2196f3;
 }
 
 .our-team-social-link:hover .our-team-social-icon,
 .our-team-social-link:focus .our-team-social-icon {
   fill: #ffffff;
+}
+
+.our-team-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 
 /* Оформление секции ПОСТОЯННЫЕ КЛИЕНТЫ */
@@ -892,6 +895,13 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.client-list-link:hover, .client-list-link:focus,
+.client-list-link:focus .client-icon,
+.client-list-link:hover .client-icon {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+
 .client-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -900,14 +910,6 @@ img {
   margin: auto;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-list-link:hover,
-.client-list-link:focus,
-.client-list-link:hover .client-icon,
-.client-list-link:focus .client-icon {
-  fill: #2196f3;
-  border-color: #2196f3;
 }
 
 /* Оформление ПОДВАЛА страницы */
@@ -927,8 +929,8 @@ img {
 .footer-logo {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   color: #ffffff;
 }
@@ -939,8 +941,9 @@ img {
 
 .footer-address-map {
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -951,13 +954,15 @@ img {
 
 .footer-address-mail,
 .footer-address-tel {
-  font-weight: 400;
-  line-height: 1.71;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -989,13 +994,17 @@ img {
 
 .footer-social-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover, .footer-social-link:focus {
+  background-color: #2196f3;
 }
 
 .footer-social-icon {
@@ -1004,21 +1013,16 @@ img {
   height: 20px;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: #2196f3;
-}
-
 .subscribe {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
   text-align: center;
-  justify-content: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1058,11 +1062,12 @@ img {
 }
 
 .form-subscribe-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
   display: block;
   padding-top: 12px;
   margin-bottom: 20px;
-  font-weight: bold;
-  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   align-items: center;

@@ -4,20 +4,21 @@
   display: flex;
 }
 .advantages-list-name {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
+  @include font();
   text-transform: uppercase;
 }
 
 .advantages-description {
-  font-weight: 400;
-  line-height: 1.71;
+  @include font($fs: 14px, $fw: 400, $lh: 1.71);
   color: $primary-text-color;
 }
 
 .advantages-list-item {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantages-icon-box {
@@ -32,8 +33,4 @@
   display: block;
   width: 70px;
   height: 70px;
-}
-
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
 }

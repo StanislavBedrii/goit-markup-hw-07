@@ -13,10 +13,8 @@
   background-position: center;
 }
 .title-hero {
+  @include font($fs: 44px, $fw: 900, $lh: 1.36);
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -32,9 +30,7 @@
   margin-left: auto;
   border-radius: 4px;
   border: 1px solid transparent;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font($lh: 1.88);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;

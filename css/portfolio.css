@@ -321,15 +321,15 @@ img {
 /* Оформление логотипа */
 .header .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo,
 .logo-web {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   color: #000000;
 }
@@ -353,18 +353,18 @@ img {
 }
 
 .nav-list-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
-  font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-link:hover, .nav-list-link:focus {
   color: #2196f3;
   cursor: pointer;
 }
@@ -382,8 +382,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-link:hover,
-.header-contacts-link:focus,
+.header-contacts-link:hover, .header-contacts-link:focus,
 .header-contacts-link:hover .header-contacts-envelope-icon,
 .header-contacts-link:focus .header-contacts-envelope-icon,
 .header-contacts-link:hover .header-contacts-tel-icon,
@@ -441,8 +440,8 @@ img {
   padding-right: 22px;
   padding-bottom: 6px;
   padding-left: 22px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.63;
   text-align: center;
   border: 1px solid transparent;
@@ -452,8 +451,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter-button:hover, .filter-button:focus {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
@@ -497,23 +495,23 @@ img {
 
 .work-examples-title {
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2;
   color: #212121;
   letter-spacing: 0.06em;
 }
 
 .work-examples-subtitle {
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.88;
   color: #757575;
 }
 
 .work-examples-description {
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
   padding: 63px 24px;
   color: #ffffff;
@@ -574,8 +572,8 @@ img {
 .footer-logo {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   color: #ffffff;
 }
@@ -586,8 +584,9 @@ img {
 
 .footer-address-map {
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -598,13 +597,15 @@ img {
 
 .footer-address-mail,
 .footer-address-tel {
-  font-weight: 400;
-  line-height: 1.71;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -636,13 +637,17 @@ img {
 
 .footer-social-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover, .footer-social-link:focus {
+  background-color: #2196f3;
 }
 
 .footer-social-icon {
@@ -651,21 +656,16 @@ img {
   height: 20px;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: #2196f3;
-}
-
 .subscribe {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
   text-align: center;
-  justify-content: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -705,11 +705,12 @@ img {
 }
 
 .form-subscribe-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
   display: block;
   padding-top: 12px;
   margin-bottom: 20px;
-  font-weight: bold;
-  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   align-items: center;

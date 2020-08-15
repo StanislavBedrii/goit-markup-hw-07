@@ -1,17 +1,13 @@
 /* Шапка страницы ======================================= */
 /* Оформление логотипа */
 .header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex($jc: space-between);
 }
 
 .logo,
 .logo-web {
   font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font($fs: 26px, $fw: 700, $lh: 1.19);
   color: #000000;
 }
 .logo-web {
@@ -30,20 +26,19 @@
   display: flex;
 }
 .nav-list-link {
+  @include font($fs: 14px, $fw: 500);
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: $primary-title-color;
-  font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   transition: $transition-color;
-}
 
-.nav-list-link:hover,
-.nav-list-link:focus {
-  color: $accent-color;
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+  }
 }
 
 .nav-list-item:not(:last-child) {
@@ -57,15 +52,16 @@
   letter-spacing: 0.02em;
   color: $primary-text-color;
   transition: $transition-color;
-}
-.header-contacts-link:hover,
-.header-contacts-link:focus,
-.header-contacts-link:hover .header-contacts-envelope-icon,
-.header-contacts-link:focus .header-contacts-envelope-icon,
-.header-contacts-link:hover .header-contacts-tel-icon,
-.header-contacts-link:focus .header-contacts-tel-icon {
-  color: $accent-color;
-  fill: $accent-color;
+
+  &:hover,
+  &:focus,
+  &:hover .header-contacts-envelope-icon,
+  &:focus .header-contacts-envelope-icon,
+  &:hover .header-contacts-tel-icon,
+  &:focus .header-contacts-tel-icon {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .header-contacts {

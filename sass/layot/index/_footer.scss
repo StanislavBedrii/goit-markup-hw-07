@@ -6,16 +6,16 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $footer-bgr-color;
+
+  .container {
+    display: flex;
+  }
 }
-.footer .container {
-  display: flex;
-}
+
 .footer-logo {
   margin-bottom: 20px;
   font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font($fs: 26px, $fw: 700, $lh: 1.19);
   color: $secondary-white-text-color;
 }
 
@@ -25,8 +25,7 @@
 
 .footer-address-map {
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
+  @include font($fs: 14px);
   color: $secondary-white-text-color;
   transition: $transition-color;
 }
@@ -37,14 +36,12 @@
 
 .footer-address-mail,
 .footer-address-tel {
-  font-weight: 400;
-  line-height: 1.71;
+  @include font($fs: 14px);
   color: $footer-address-text-color;
   transition: $transition-color;
 }
 .join {
-  font-weight: 700;
-  line-height: 1.14;
+  @include font($fs: 14px);
   text-transform: uppercase;
   color: $secondary-white-text-color;
   margin-bottom: 20px;
@@ -73,14 +70,17 @@
 }
 
 .footer-social-link {
-  display: flex;
+  @include flex();
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: $transition-bgr-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .footer-social-icon {
@@ -89,21 +89,12 @@
   height: 20px;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: $accent-color;
-}
-
 .subscribe {
-  display: flex;
+  @include flex();
+  @include font($lh: 1.88);
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  align-items: center;
   text-align: center;
-  justify-content: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -120,9 +111,7 @@
 }
 
 .form-subscribe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   flex-wrap: wrap;
 }
 
@@ -136,18 +125,17 @@
   padding-left: 16px;
   background-color: $footer-bgr-color;
   color: $footer-address-text-color;
-}
 
-.form-subscribe-input::placeholder {
-  color: $footer-address-text-color;
+  &::placeholder {
+    color: $footer-address-text-color;
+  }
 }
 
 .form-subscribe-title {
+  @include font($fs: 14px);
   display: block;
   padding-top: 12px;
   margin-bottom: 20px;
-  font-weight: bold;
-  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   align-items: center;
